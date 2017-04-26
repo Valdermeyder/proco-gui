@@ -32,7 +32,7 @@ public class ProducerConsumerFarm {
 	}
 
 	public synchronized void stopAll() throws InterruptedException {
-		// impleent your stopping here
+		threads.forEach(Thread::interrupt);
 	}
 
 	public boolean isStarted() {

@@ -1,12 +1,5 @@
 package com.motsolutions.proco.gui.event;
 
-import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
-/**
- * Created by JCW478 on 4/26/2017.
- */
 public class ProducerSnapshot {
     String id;
     int counter;

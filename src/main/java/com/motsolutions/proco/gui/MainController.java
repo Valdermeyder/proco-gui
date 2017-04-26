@@ -50,7 +50,11 @@ public class MainController {
 	}
 
 	public void onStopAll(ActionEvent event) {
-		// handle stopping here...
+		try {
+			farm.stopAll();
+		} catch (InterruptedException e) {
+			System.out.println("Thread is stopped. Details: " + e.getMessage());
+		}
 	}
 
 	/**
